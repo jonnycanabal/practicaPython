@@ -1,3 +1,4 @@
+# (12/09/2022)
 #Ejemplos de Variables
 """
 mensaje = "Hola mundo esoty aprendiendo Python"
@@ -19,6 +20,7 @@ print("hola %s de %s"%(nombre,ciudad))
 #Leer datos desde teclado
 nombre = input("Digite tu nombre: ")
 print(nombre)
+
 
 
 
