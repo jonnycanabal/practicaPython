@@ -2,7 +2,7 @@
 opcion = None
 producto = None
 
-while opcion != 5:
+while opcion != "5":
     print("\nMENU PRINCIPAL PRODUCTOR")
     print("1. Crear productor")
     print("2. Ver productor")
@@ -10,24 +10,28 @@ while opcion != 5:
     print("4. Eliminar productor")
     print("5. Salir \n")
 
-    opcion = int(input("\nDigite la opcion: "))
+    opcion = input("\nDigite la opcion: ")
 
-    if opcion == 1:
+    if opcion == "1":
         producto = input("\nIngrese el producto: ")
 
-    elif opcion == 2:
+    elif opcion == "2":
         if producto == None:
             print("\nNo hay producto en el sistema, Ingrese uno por favor ")
         else:
             print("\nEl producto ingresado fue: " + producto)
 
-    elif opcion == 3:
+    elif opcion == "3":
         producto = input("\nIngrese el nuevo producto: ")
         print("El nuevo producto ingresado fue: " + producto)
 
-    elif opcion == 4:
+    elif opcion == "4":
         producto = None
         print("\nEl producto se Elimino de forma exitosa")
+    
+    
+    else:
+        print("\nopcion no valida")
 
 
 """
