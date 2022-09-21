@@ -36,7 +36,7 @@ while cantidad_estudiantes.isdigit() == True:
                 for y in range(1,4):
                     nota = input(f"Ingrese la nota #{y} del estudiante {estudiante}: ")
                     # if nota.isdigit() == True: # INTENAR INCLUIR UN CICLO WHILE PARA HACER EL PROCESO DE VERIFICACION SI INGRESA UN NUMERO O UNA LETRA CON EL ISDIGIT()
-                    suma += int(nota)
+                    suma += float(nota)
                     # else:
                         # print("No digitaste una Nota, Por favor Ingresa un numero")
                         # nota = "0"
