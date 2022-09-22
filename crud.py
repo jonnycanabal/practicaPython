@@ -44,6 +44,10 @@ ALMACENANDO DATOS, PARA MOSTRAR, EDITAR, ELIMINAR POR MEDIO DE DICCIONARIO, LIST
 
 
 # Variable y diccionario principal declarados.
+
+import keyword
+
+
 opcion = None
 estudiantes = {'123': {'nombre': 'jonny', 'apellido': 'canabal', 'edad': '28', 'telefono': '3183865455'}, '456': {'nombre': 'diego', 'apellido': 'briñez', 'edad': '25', 'telefono': '15987532'}, '789': {'nombre': 'zamir', 'apellido': 'acevedo', 'edad': '30', 'telefono': '1478523699'}}
 contador = 0
@@ -63,6 +67,14 @@ def mostrar (id): # FOR PARA RECORRER LAS LLAVES DEL DICCIONARIO PARA QUE LOS CA
 
     else:
         print("El estudiante no existe")
+
+"""def mostrar2(id):
+    if id in estudiantes:
+        for x in estudiantes:
+            print("Nombre:", estudiantes[id]["nombre"])
+
+    else:
+        print("El estudiante no existe")"""
 
 while opcion != "7":
     # Menu de opciones.
